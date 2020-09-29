@@ -1,0 +1,21 @@
+shouldCreateCustomer:
+    input:  >-
+        {
+          "name": "Tiago Henrique",
+          "cpf": "31284149200",
+          "age": 40
+        }
+
+shouldReturnBadRequestWhenTryCreateCustomerWithoutName:
+    input:  >-
+        {
+          "cpf": "31284149200",
+          "age": 40
+        }
+shouldChangeCustomer:
+    input:  >-
+        {
+          "name": "Customer Alterado",
+          "cpf": "31284149200",
+          "age": 50
+        }
